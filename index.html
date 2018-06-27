@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector!</title>
+    <link rel"stylesheet" href="assets/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>  
+   
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div id="heading">
+            <h1>Crystals Collector!</h1>
+        </div>
+
+        <div class="p">
+            <p>You will be given a random number at the start of the game.</p>
+
+            <p>There are four crystals below. By clicking on a crystal you will add a specific 
+                amount of points to your score.</p>
+
+            <p>You win the game by matching your total score to random numbers, 
+                you lose the game if your total score goes abouve the random number.</p>
+
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+            
+        </div>
+
+        <div id="randomNumber"></div>
+
+        <div class="win-lose">
+
+                <p>Wins: <span id="wins">0</span></p>
+        
+                <p>Losses: <span id="losses">0</span></p>
+
+        </div>
+
+        <div id="buttons">
+                <input type="image" class="crystal" src="./assets/images/pink diamond.png" id="pinkCrystal">
+                <input type="image" class="crystal" src="./assets/images/blue diamond.png" id="blueCrystal">
+                <input type="image" class="crystal" src="./assets/images/white diamond.png" id="whiteCrystal">
+                <input type="image" class="crystal" src="./assets/images/green diamond.png" id="greenCrystal">
+              </div>
+
+        <div class="total">
+                <p>Your total score is: <span id="total-score">0</span></p>
+        </div>
+
+    </div>
+
+
+    
+</body>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</html>

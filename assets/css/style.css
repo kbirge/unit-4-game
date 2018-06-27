@@ -1,0 +1,62 @@
+.wrapper{
+    background: url('../images/pow\ star/pow-star.png');
+    width: 800px;
+    height: 800px;
+    
+}
+
+#heading{
+    min-height: 50px;
+    background:palevioletred;
+    text-align: center;
+    position: relative;
+    width: 45%;
+    margin: 7px 0 7px 7px;
+    
+    
+}
+
+.p{
+    text-align: left;
+    background-color: paleturquoise;
+    padding: 10px;
+    width: 45%;
+    height: 300px;
+    margin: 7px 0 7px 7px;
+
+}
+
+#randomNumber{
+    background-color: palevioletred;
+    height: 80px;
+    width: 150px;
+    margin: 0 0 7px 7px;
+    float:left;
+    display:inline-block;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.win-lose{
+    margin: 10px;
+    
+}
+
+#games{
+    background-color: paleturquoise;
+    height: 80px;
+    width: 70px;
+    display: inline-block;
+    margin: 0 0 7px 7px;
+    font-size: .85rem;
+}
+
+.crystal{
+    width: 40px;
+    height: auto;
+    margin: 0 0 0 7px;
+}
+
+.total{
+    
+}
