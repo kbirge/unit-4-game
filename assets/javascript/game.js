@@ -1,34 +1,6 @@
 
-//var random_result;
-//var lost;
-//var win;
-
-//for (var i = 0; i < 4; i++){
-
-   // var random = Math.floor(Math.random() * 12);
-    //console.log(random);
-
-    //var crystal = $("<div>");
-   //     crystal.attr({
-       //     "class": 'crystal',
-         //   "data-random": random
-       // });
-
-    //$(".crystals").append(crystal);
-//}
-
-//speudo coding
 
 //a game with 4 crystals and Random Result
-//Every crystal needs t have a random number between 1-12
-//A new random number should be generated every single time we win or lose
-//to those 4 cryastals
-//When clicking any Crystal , it should add it with the previous result
-//Until it equals the Randome Result
-//If it is greater than the Random Result, we decrement a losses counter
-//if it is equal, then we increment a win counter
-
-
 CrystalGame = {
     buttons: $("#buttons").children(),
     goalNumber: 0,
@@ -37,8 +9,9 @@ CrystalGame = {
     losses: 0,
     gameFunc: function() {
 
-
       //Win and Lose conditions
+      //If it is greater than the Random Result, we decrement a losses counter
+      //if it is equal, then we increment a win counter
       if (this.playerScore >= this.goalNumber) {
         if (this.playerScore == this.goalNumber) {
           this.wins++;
@@ -50,12 +23,12 @@ CrystalGame = {
         this.gameInit();
       }
 
-
-      //If game not lost or won, keep updating playerScore html
+      //A new random number should be generated every single time we win or lose
+      //to those 4 cryastals
       $("#playerScore").html(this.playerScore);
     },
     gameInit: function() {
-      // Game reset function -- pick new numbers for buttons and goal
+      //Every crystal needs to have a random number between 1-12
       this.goalNumber = Math.floor(Math.random() * 102) + 19;
       this.playerScore = 0;
       $("#randomNumber").html(this.goalNumber);
@@ -73,10 +46,12 @@ CrystalGame = {
   
   
   // On click listener
+  //When clicking any Crystal , it should add it with the previous result
+  //Until it equals the Randome Result
   $.map(CrystalGame.buttons, (element) => {
     $(element).on('click', () => {
       
-      //On each button click, run game function.
+      //run the function for each button clicked 
       CrystalGame.playerScore += element.randNumber
       CrystalGame.gameFunc();
     })
