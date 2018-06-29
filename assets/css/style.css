@@ -39,16 +39,6 @@
 
 .win-lose{
     margin: 10px;
-    
-}
-
-#games{
-    background-color: paleturquoise;
-    height: 80px;
-    width: 70px;
-    display: inline-block;
-    margin: 0 0 7px 7px;
-    font-size: .85rem;
 }
 
 .crystal{
@@ -57,6 +47,3 @@
     margin: 0 0 0 7px;
 }
 
-.total{
-    
-}
